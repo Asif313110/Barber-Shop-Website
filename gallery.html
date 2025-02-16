@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber-Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<body>
+
+    <!-- <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg customStyle ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="imglogo" src="./assets/logo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active linea" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle linea" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                ABOUT
+                            </a>
+                            <ul class="dropdown-menu customdrop" aria-labelledby="navbarDropdown">
+                                <li class="customdropgap"><a class="dropdown-item" href="#">ABOUT US</a></li>
+                                <li class="customdropgap"><a class="dropdown-item" href="#">ABOUT COMPANY</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle linea" href="#" id="navbarDropdown2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SERVICES
+                            </a>
+                            <ul class="dropdown-menu customdrop" aria-labelledby="navbarDropdown2">
+                                <li class="customdropgap"><a class="dropdown-item" href="#">SERVICES 01</a></li>
+                                <li class="customdropgap"><a class="dropdown-item" href="#">SERVICES 02</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle linea" href="#" id="navbarDropdown3" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PAGES
+                            </a>
+                            <ul class="dropdown-menu customdrop" aria-labelledby="navbarDropdown3">
+                                <li class="customdropgap"><a class="dropdown-item" href="#">APPONTMENT</a></li>
+                                <li class="customdropgap"><a class="dropdown-item" href="#">GALLERY</a></li>
+                                <li class="customdropgap"><a class="dropdown-item" href="#">OUR TEAM</a></li>
+                                <li class="customdropgap"><a class="dropdown-item" href="#">OUR PRICING</a></li>
+                                <li class="customdropgap"><a class="dropdown-item" href="#">404 ERROR</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle linea" href="#" id="navbarDropdown4" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                BLOG
+                            </a>
+                            <ul class="dropdown-menu customdrop" aria-labelledby="navbarDropdown4">
+                                <li class="customdropgap"><a class="dropdown-item" href="#">BLOG GRID</a></li>
+                                <li class="customdropgap"><a class="dropdown-item" href="#">BLOG CLASSIC</a></li>
+                                <li class="customdropgap"><a class="dropdown-item" href="#">BLOG SINGLE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn" type="submit">MAKE APPOINTMENT</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div> -->
+
+    <nav>
+        <div class="logo"><img src="./assets/logo.png" alt=""></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label> 
+        <ul style="z-index: 101;">
+            <li><a class="active" href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="./services.html">SERVICES</a></li>
+            <li><a href="./gallery.html">GALLERY</a></li>
+            <li><a href="./contact.html">CONTACT US</a></li>
+            <div class="btnnav">MAKE APPOINTMENT</div>
+        </ul>
+
+    </nav>
+
+    <!-- slider  header -->
+ <!-- Hero Section  -->
+
+ <section class="hero-section-1">
+    <div class="overlay-1"></div>
+    <div class="hero-content-1">
+        <!-- <h1>Making You Look Good <br> Is In Our Heritage.</h1>
+        <p>Barber is a person whose occupation is mainly to cut, dress, groom, style and shave men's and boys' hair.</p>
+        <a href="#" class="btn-1">Make Appointment</a> -->
+        <p>Trendy Salon & Spa</p>
+        <h2>Barbershop Gallery</h2>
+        <img src="./assets/heading-line.png" alt="Heading Line" class="heading-line">
+    </div>
+</section>
+
+<!-- gallery  -->
+
+<div class="tabs">
+    <button class="tab-button active" onclick="filterSelection('all')">ALL</button>
+    <button class="tab-button" onclick="filterSelection('haircut')">HAIRCUT</button>
+    <button class="tab-button" onclick="filterSelection('mask')">FACE MASKING</button>
+    <button class="tab-button" onclick="filterSelection('shaving')">SHAVING</button>
+    <button class="tab-button" onclick="filterSelection('color')">HAIR COLOR</button>
+</div>
+
+<div class="gallery">
+    <div class="imgtop">
+        <img src="./assets/portfolio-1.jpg" class="haircut show">
+        <img src="./assets/portfolio-2.jpg" class="haircut show">
+        <img src="./assets/portfolio-3.jpg" class="mask show">
+    </div>
+    <div class="imgbottom">
+        <img src="./assets/portfolio-4.jpg" class="shaving show">
+        <img src="./assets/portfolio-5.jpg" class="color show">
+        <img src="./assets/portfolio-6.jpg" class="color show">
+    </div>
+  
+  
+</div>
+
+
+<!-- Blog Section -->
+<!-- 
+<section class="blog-section">
+    <div class="maintrendy">
+        <p>From Blog</p>
+            <h2>A Good Newspaper Is A Nation Talking To Itself</h2>
+            <img src="./assets/heading-line.png" alt="Heading Line" class="heading-line">
+    </div>
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="./assets/post-1.jpg" alt="Haircut">
+            <span class="category">Interior</span>
+            <h2>Minimalist trending in modern architecture 2019</h2>
+            <p>Building first evolved out dynamics between needs means available building materials attendant skills.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="./assets/post-2.jpg" alt="Haircut">
+            <span class="category">Architecture</span>
+            <h2>Terrace in the town yamazaki kentaro design workshop.</h2>
+            <p>Building first evolved out dynamics between needs means available building materials attendant skills.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="./assets/post-3.jpg" alt="Haircut">
+            <span class="category">Design</span>
+            <h2>W270 house são paulo arquitetos fabio jorge architecture.</h2>
+            <p>Building first evolved out dynamics between needs means available building materials attendant skills.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</section> -->
+<section class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Making You Look Good <br> Is In Our Heritage.</h1>
+        <p>Barber is a person whose occupation is mainly to cut, dress, groom, style and shave men's and boys' hair.</p>
+        <a href="#" class="btn">Make Appointment</a>
+
+    </div>
+</section>
+
+
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide"><img src="./assets/sponsor-1.png" alt="Logo 1"></div>
+        <div class="slide"><img src="./assets/sponsor-2.png" alt="Logo 2"></div>
+        <div class="slide"><img src="./assets/sponsor-3.png" alt="Logo 3"></div>
+        <div class="slide"><img src="./assets/sponsor-4.png" alt="Logo 4"></div>
+        <div class="slide"><img src="./assets/sponsor-5.png" alt="Logo 5"></div>
+        <div class="slide"><img src="./assets/sponsor-1.png" alt="Logo 1"></div>
+        <div class="slide"><img src="./assets/sponsor-2.png" alt="Logo 2"></div>
+        <div class="slide"><img src="./assets/sponsor-3.png" alt="Logo 3"></div>
+        <div class="slide"><img src="./assets/sponsor-4.png" alt="Logo 4"></div>
+        <div class="slide"><img src="./assets/sponsor-5.png" alt="Logo 5"></div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="./assets/logo.png" alt="">
+            <p>Our barbershop is created for men who appreciate premium quality, time, and flawless looks.</p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Headquarters</h3>
+            <p>962 Fifth Avenue, 3rd Floor, New York, NY 10022</p>
+            <p>Email: hello@dynamiclayers.net</p>
+            <p>Phone: (+123) 456 789 101</p>
+        </div>
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <li>Monday - Friday: 11:30am - 2:00pm</li>
+            <li>Saturday - Monday: 9:00am - 8:00pm</li>
+            <li>Sunday: 4:30am - 1:00pm</li>
+            <li>Monday - Friday 5:30am - 11:008pm</li>
+        </div>
+        <div class="footer-section subscribe">
+            <h3>Subscribe to our contents</h3>
+            <input type="email" placeholder="Email Address...">
+            <button>SUBSCRIBE</button>
+        </div>
+    </div>
+</footer>
+<hr>
+<div class="bottom-bar">
+    <p>&copy; 2025 Barber Shop Powered by DynamicLayers</p>
+    <div class="bottom-links">
+        <a href="#">ORDERS</a>
+        <a href="#">TERMS</a>
+        <a href="#">REPORT PROBLEM</a>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
